@@ -1,0 +1,23 @@
+# id	file	offset	original bytes	patched bytes
+# Every patch is checked against its original bytes before writing; see docs/patches.md for what each one does.
+gsbase-loop	ntdll.so	0x37ef1	662e0f1f8400000000000f1f44	f64304100f85aa0c0000e9f00d
+gsbase-loop	ntdll.so	0x38ba1	4b010000	4cf3ffff
+clip-relative	winemac.so	0x08e3e	74	eb
+warp-keeps-deltas	winemac.so	0x0831d	18	10
+no-forced-absolute	winemac.so	0x08c12	750d	9090
+buttons-no-move	winemac.so	0x41140	03800000098000002180000005800000118000004180	02000000080000002000000004000000100000004000
+buttons-no-move	winemac.so	0x2eda2	8180	8000
+buttons-no-move	winemac.so	0x2edb3	0181	0001
+warp-dissociates	winemac.so	0x081d2	ff1528ac0400	e92a01000090
+warp-dissociates	winemac.so	0x08301	662e0f1f8400000000000f1f	31ffe84a580300e92fffffff
+unclip-reassociates	winemac.so	0x0e94a	b801	e905
+unclip-reassociates	winemac.so	0x0e954	662e0f1f8400000000006690	6a015fe8f6f10200b001ebef
+getcursorpos-server	winemac.so	0x2e291	660f1303	0f1f4000
+drop-first-after-warp	winemac.so	0x08bef	c783	83a3
+drop-first-after-warp	winemac.so	0x08bf6	000000eb26	e934040000
+buttons-zero-xy	winemac.so	0x2edbb	8b4b20448b4324	31c9904531c090
+wheel-no-move	winemac.so	0x2f096	8b6e20418b5e24	31ed9031db9090
+wheel-no-move	winemac.so	0x2f156	0188	0008
+wheel-no-move	winemac.so	0x2f1ad	8b6620458b6e24	31e4904531ed90
+wheel-no-move	winemac.so	0x2f26d	0190	0010
+fullscreen-clip	winemac.so	0x0c633	ffc34939dc0f8562ffffff41b810	8b45a880b822010000007549eb2d
